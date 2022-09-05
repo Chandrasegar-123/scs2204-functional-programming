@@ -35,6 +35,9 @@ object Caesar_Cipher {
       if (x == -1){
         c
       }
+      else if((x - shift)<0){
+        alphabet((alphabet.size+(x-shift)))
+      }
       else {
         alphabet((x - shift) % alphabet.size)
       }
